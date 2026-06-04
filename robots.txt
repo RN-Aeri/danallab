@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# 배포 전 danallab.com 을 실제 도메인으로 치환하세요
+Sitemap: https://danallab.com/sitemap.xml
