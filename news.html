@@ -49,6 +49,14 @@
   <section class="block">
     <h1 data-lang-ko>소식</h1>
     <h1 data-lang-en>News</h1>
+    <!--
+      ▣ 소식 제목에 링크/이미지 연결하는 법 (정적 사이트라 '업로드 폼'은 없고, 파일·URL을 직접 연결합니다)
+        1) 외부 기사/논문 링크:  제목을 아래처럼 <a>로 감쌉니다.
+           <a href="https://기사주소" target="_blank" rel="noopener" class="news-link"><strong>제목 <span class="arrow">↗</span></strong></a>
+        2) 이미지(사진·기사 캡처):  이미지 파일을 assets/news/ 폴더에 넣고 같은 방식으로 연결합니다.
+           예) <a href="assets/news/2026-04.jpg" target="_blank" rel="noopener" class="news-link"><strong>제목 <span class="arrow">↗</span></strong></a>
+      ※ 아래 JMIR·RN&H 항목이 1)번 방식의 실제 예시입니다.
+    -->
     <ul class="news-list">
       <li>
         <span class="date">2026.04</span>
@@ -80,8 +88,8 @@
       <li>
         <span class="date">2025</span>
         <div>
-          <strong data-lang-ko>JMIR 논문 게재</strong>
-          <strong data-lang-en>Paper published in JMIR</strong>
+          <a href="https://doi.org/10.2196/70836" target="_blank" rel="noopener" class="news-link"><strong data-lang-ko>JMIR 논문 게재 <span class="arrow">↗</span></strong></a>
+          <a href="https://doi.org/10.2196/70836" target="_blank" rel="noopener" class="news-link"><strong data-lang-en>Paper published in JMIR <span class="arrow">↗</span></strong></a>
           <p data-lang-ko style="margin:.3rem 0 0; color:var(--ink-soft);">완화·호스피스 케어에 대한 대중 인식을 소셜미디어 콘텐츠 분석으로 규명한 연구가 <em>Journal of Medical Internet Research</em>(27, e70836)에 게재되었습니다.</p>
           <p data-lang-en style="margin:.3rem 0 0; color:var(--ink-soft);">Our social-media content analysis of public perspectives on palliative and hospice care was published in the <em>Journal of Medical Internet Research</em> (27, e70836).</p>
         </div>
@@ -89,8 +97,8 @@
       <li>
         <span class="date">2025.02</span>
         <div>
-          <strong data-lang-ko>Research in Nursing &amp; Health 최우수논문상 수상</strong>
-          <strong data-lang-en>Research in Nursing &amp; Health — Best Paper Award</strong>
+          <a href="https://doi.org/10.1002/nur.22413" target="_blank" rel="noopener" class="news-link"><strong data-lang-ko>Research in Nursing &amp; Health 최우수논문상 수상 <span class="arrow">↗</span></strong></a>
+          <a href="https://doi.org/10.1002/nur.22413" target="_blank" rel="noopener" class="news-link"><strong data-lang-en>Research in Nursing &amp; Health — Best Paper Award <span class="arrow">↗</span></strong></a>
           <p data-lang-ko style="margin:.3rem 0 0; color:var(--ink-soft);">가정간호 기록과 자연어처리를 활용한 지역사회 거주 성인의 당뇨 전단계 위험요인 연구가 2024년 최우수논문상을 수상했습니다.</p>
           <p data-lang-en style="margin:.3rem 0 0; color:var(--ink-soft);">Our study on prediabetes risk factors using home health nursing notes and NLP received the journal's 2024 Best Paper Award.</p>
         </div>

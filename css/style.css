@@ -43,8 +43,8 @@ h1, h2, h3, h4 {
   margin: 1.6em 0 .6em;
 }
 h1 { font-size: 2.2rem; }
-h2 { font-size: 1.55rem; border-bottom: 1px solid var(--line); padding-bottom: .35em; }
-h3 { font-size: 1.2rem; color: var(--accent); }
+h2 { font-size: 1.55rem; color: var(--accent); font-weight: 700; border-bottom: 1px solid var(--line); padding-bottom: .35em; margin-top: 2.9em; }
+h3 { font-size: 1.2rem; color: var(--accent); font-weight: 700; margin-top: 2.2em; }
 
 .container {
   max-width: var(--maxw);
@@ -295,11 +295,35 @@ section.block h2 { margin-top: 0; }
 }
 .pub-year-header {
   font-family: var(--font-mono);
-  font-size: .85rem;
-  color: var(--muted);
-  margin: 2rem 0 .5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 2.6rem 0 .6rem;
   letter-spacing: .08em;
 }
+
+/* ---------- Team member photo ---------- */
+.member-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--bg-soft);
+  border: 2px solid var(--line);
+  margin: 0 0 .9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+.member-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; }
+.member-photo .ph { color: var(--muted); font-size: .72rem; text-align: center; line-height: 1.3; }
+.card .member-photo + h3 { margin-top: 0; }
+
+/* ---------- Clickable news title ---------- */
+.news-link { color: inherit; text-decoration: none; border-bottom: 1px solid transparent; }
+.news-link:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.news-link .arrow { color: var(--accent); font-size: .8em; margin-left: .15em; }
 
 /* ---------- Project page ---------- */
 .project-hero {
